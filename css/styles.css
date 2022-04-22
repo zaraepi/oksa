@@ -1,0 +1,1621 @@
+/* icon font color #fd00c3 */
+
+/* global */
+@font-face {
+    font-family: "CircularStd";
+    src: url("../fonts/Circular/CircularStd-Book.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    /*font-family:'Noto Serif Display' !important;*/
+    overflow-x: hidden;
+    
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-family: 'Noto Serif Display' !important;
+    font-size: 2em;
+    font-weight:  400;
+    color: #07430e;
+    padding-top: 1em;
+}
+
+p {
+    font-family: 'DM Sans' !important;
+    color: #444444;
+    font-size: 1em;
+    padding-top: 1em;
+    /*line-height: 1.8em;*/
+}
+
+/*---this is jquery validation---*/
+
+/*All devices and mobile phone*/
+
+
+.error {
+    text-align: center !important;
+    color: red;
+    display: block;
+}
+
+.menu-list {
+
+     margin-top: 5em; 
+}
+
+.menu-list li {
+    display: block;
+}
+
+.menu-item {
+    line-height: 3em;
+    text-align: center;
+    font-family: 'Noto Serif Display';
+    font-size: 1.5em;
+    font-weight:  400;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    line-height: 3em;
+}
+
+.section {
+    overflow: hidden;
+}
+
+.section1 {
+    padding-bottom: 5em;
+    background-color: #fff38b54;
+}
+
+.section2, .section4 {
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-bottom: 5em;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.section3 {
+
+    /* background-color: #fffae7; */
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 10em;
+}
+
+.section5 {
+
+    /* border-bottom:1px solid rgba(0,0,0,.1); */
+    background-color: black;
+}
+
+.logo-section1 {
+    font-size: 2.5em !important;
+    top: 0;
+    margin-top: 0.6em !important;
+    font-family:  'Noto Serif Display';
+    font-weight: 500;
+    letter-spacing: -0.07em;
+    color: black !important;
+}
+
+.menu-item a {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    /*font-weight: 500;
+    font-size: 1.2em;*/
+}
+
+.menu-item a:hover, .menu-item a:active, .menu-item a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    /*color: #00c666;*/
+    transition: all ease 1s;
+}
+
+#slide-button {
+    width: 15em;
+    height: 100vh;
+    left: -15em;
+    position: fixed;
+    z-index: 70;
+    transition: all ease 0.2s;
+    background-color: #000;
+}
+
+#slide-button.open {
+    left: 0em;
+    transition: all ease 0.2s;
+}
+
+#slide-button .active {
+    /*border-bottom: 0.1em #00c666 solid;*/
+    line-height: 2em;
+    transition: all ease 1s;
+}
+
+.menu-close-btn:hover {
+    transform: rotate(180deg);
+}
+
+.menu-close-btn:before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.menu-close-btn:after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+.menu-close-btn.show {
+    margin-left: 75%;
+    margin-top: 2.5em;
+    z-index: 20;
+    position: absolute;
+    color: black;
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: transform .25s ease-in-out;
+}
+
+.menu-close-btn {
+    display: none;
+}
+
+.main {
+    width: 90%;
+    transition: all ease 1s;
+    margin: auto;
+    position: relative;
+    height: 4.5em;
+}
+
+.nav-sub-cont {
+    width: 90%;
+    height: 5em;
+    margin: auto;
+}
+
+.main.fixed {
+    position: fixed;
+    z-index: 60;
+    background-color: rgba(0, 0, 0, 0.90);
+    margin: auto;
+    width: 100%;
+}
+
+/*----menu hamburger icon bar---*/
+#nav-icon1 {
+    width: 2.5em;
+    height: 2em;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    margin-top: 1.4em;
+    left: 84%;
+    position: fixed;
+    margin-top: 1.5em;
+    /*color: black;*/
+}
+
+#nav-icon1 span.fixed {
+    background: white;
+}
+
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 0.1em;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 0.8em;
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 1.6em;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+}
+
+/*----background image top page section 1-----------------------*/
+.background-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    background-position-x: 50%;
+
+}
+
+.lorem {
+    color: #000;
+    transition: all ease 0.2s;
+    /*font-family: 'DM Sans';*/
+    /*color: white ;*/
+}
+
+.landing-img {
+    /*background: url(../images/salon/background-image2.jpeg) no-repeat center center;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    height: 110vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+
+}
+
+
+.text-section1-B {
+    position: absolute;
+    width: 90%;
+    font-size: 4.2em;
+    line-height: 0.7em;
+    /*color:white !important;*/
+    margin-top: 3.9em;
+    margin-left: -0.05em;
+}
+
+.intro-here1{
+    color:  black;
+   padding-top: 5em;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    /*font-family:  'DM Sans'!important;*/
+}
+
+.view-more-button{
+    margin-top: 2em;
+    margin-left: -81%;
+}
+
+#viewmore {
+    font-size: 1em;
+    width: auto;
+   /* padding: 0.2em;
+    margin-top: 0.2em;*/
+    background-color: white;
+    transition: all .9s ease-in-out;
+    /*font-family: "Noto Serif Display";*/
+    font-family: "CircularStd";
+    color: black;
+    
+    position: left;
+    position: absolute;
+    padding: 0.5em 2em;
+    font-weight: 500;
+    border: 2px solid black;
+}
+
+
+
+.viewmore-link {
+    text-decoration: none;
+    color: white;
+}
+
+#viewmore:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.text-main {
+    width: 90%;
+    margin: auto;
+}
+
+.tracking-container {
+    display: flex;
+}
+
+.placeholder.show {
+    display: none;
+}
+
+.placeholder.hide {
+    display: show;
+}
+
+/*----- section2-------------------------------------------- */
+.text-section2-A {
+    font-size: 5em;
+    letter-spacing: -0.05em;
+    margin-top: 0.2em;
+    position: absolute;
+    margin-left: -0.1em;
+    z-index: 30;
+}
+
+.text-section2 {
+    box-sizing: border-box;
+    color: #00B0FC;
+    background: url(../images/desktop/desktop-landB.jpg) no-repeat center center;
+    background-size: cover;
+    background-position-x: 20%;
+    width: 100% !important;    /* height: 40em; */
+    height: 30em;
+    margin-top: 3em;
+}
+
+
+
+.salon1{
+width: auto;
+    height: 37em;
+    padding-top: 5em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.text-main2.moved-in {
+    transform: translateY(0em);
+}
+
+.text-main2 {
+    text-align: left;
+    margin: auto;
+    text-align: left;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.title {
+    padding-top: 1em;
+    font-size: 1.3em;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.buton-showcase {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ReadMore-A, #ReadMore-B, #ReadMore-C, #ReadMore-D {
+    font-size: 18px;
+    display: block;
+    margin-top: 1em;
+    flex: 0 0 50%;
+    display: inline-block;
+    color: #ffff;
+    background: #07430e;
+}
+
+#ReadMore-A-BookShow, #ReadMore-B-BookShow, #ReadMore-C-BookShow, #ReadMore-D-BookShow {
+    font-size: 18px;
+    display: block;
+    margin-top: 1em;
+    flex: 0 0 50%;
+    display: inline-block;
+    color: #ffff;
+}
+
+.ReadMore-description-left-A, .ReadMore-description-left-B, .ReadMore-description-left-C, .ReadMore-D {
+    display: inline-block;
+    margin-top: 0.8em;
+}
+
+.img1, .img3 {
+    width: auto;
+    height: 37em;
+    padding-top: 5em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 20;
+}
+
+.img2, .img4 {
+    width: auto;
+    height: 27em;
+    padding-top: 5em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 20;
+}
+
+.img1, .img3 {
+    transform: translateX(-20em);
+    transition: all ease 2s;
+}
+
+.title {
+    transform: translateX(-40em);
+    transition: all ease 1s;
+}
+
+.title.moved-in {
+    transform: translateX(0em);
+    transition: all ease 2s;
+}
+
+.img2, .img4 {
+    transform: translateX(20em);
+    transition: all ease 2s;
+}
+
+.img1.moved-in, .img2.moved-in, .img3.moved-in, .img4.moved-in {
+    transform: translateX(0em);
+}
+
+#location {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5em;
+}
+
+.fas {
+    padding-top: 0.5em;
+    color: #07430e;
+}
+
+.location-p {
+    font-family: 'Antic Didone' !important;
+    font-size: 16px;
+    margin-left: 0.5em;
+    color: #07430e;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+.UnderlineIcon {
+    background-image: url(../images/desktop/underline.png);
+    height: 30px;
+    width: 25px;
+    background-repeat: no-repeat;
+}
+
+.spanfonttitle {
+    display: flex;
+}
+
+.SpanFontFirst, .SpanFontSecond {
+    font-family: "Antic Didone";
+    font-size: 16px;
+    color: #07430E;
+    vertical-align: middle;
+}
+
+.SpanFontFirst {
+    padding-right: 0.5em;
+}
+
+.SpanFontSecond {
+    padding-left: 0.5em;
+}
+
+.AllShowcase {
+    padding-top: 2.5em;
+    width: 90%;
+    margin: auto;
+}
+
+/*----------------*/
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-15px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+h1 {
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 1.8em;
+    font-size: 1em;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.pure-form input[type=text] {
+    padding: 1em 1em;
+    border: 1px solid #ccc;
+    border-radius: 0 !important;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 25em;
+}
+
+.pure-button {
+    width: 8em;
+    background-color: #07430e;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 3.5em;
+    display: block;
+    color: #fff;
+    margin-top: 1.3em;
+    font-family: "CircularStd-Book";
+    font-size: 16px;
+}
+
+.pure-button:hover {
+    background-color: #000;
+}
+
+.pure-form button[type=submit] {
+    margin: auto !important;
+}
+
+.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 5em;
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 14em;
+    z-index: 5;
+    background-size: cover;
+    margin-top: 1em;
+}
+
+.img-home-1 {
+    background-image: url(../images/hotel-section4-fiordland.jpg);
+}
+
+.img-home-2 {
+    background-image: url(../images/hostel-section4-picasso-fiordland.jpg);
+}
+
+.img-home-3 {
+    background-image: url(../images/motel-section4-masseria-tauranga.jpg);
+}
+
+.img-home-4 {
+    background-image: url(../images/house-section4-keri-auckland.jpg);
+}
+
+.x.hidden {
+    display: none;
+}
+
+.x {
+    display: block;
+    outline: thin red solid;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    transition: transform .25s ease-in-out;
+}
+
+.x:hover {
+    transform: rotate(180deg);
+}
+
+.x:before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.x:after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+/*------section3-----------------*/
+.text-main-container {
+    width: 90%;
+    margin: auto;
+    top: 0;
+    position: relative;
+}
+
+.text-section3-A, .text-section4-A {
+    font-size: 5em;
+    letter-spacing: -0.05em;
+    margin-top: -0.6em;
+    position: absolute;
+    box-sizing: border-box;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+.text-section-sub-heading {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    font-size: 18px;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    color: #444;
+}
+
+.image-container {
+    box-shadow: 2px 2px 10px #888888;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    height: 25em;
+    z-index: 10;
+    background-size: cover;
+    margin: 5em 0 0 auto;
+    display: block;
+    image-rendering: auto;
+    image-rendering: pixelated;
+    filter: sepia(20%);
+    filter: contrast(100%);
+}
+
+.img-cont-section3-A {
+    background-image: url('../images/fiordland.jpg');
+}
+
+.img-cont-section3-B {
+    background-image: url('../images/mueller_hut_mtcook.jpg');
+}
+
+.img-cont-section3-C {
+    background-image: url('../images/img_landing_page_1.jpg');
+}
+
+.img-cont-section3-D {
+    background-image: url('../images/img_landing_page_2.jpg');
+}
+
+.text3-P {
+    z-index: 10;
+    margin: auto;
+    padding: 0;
+}
+
+.text3-read {
+    z-index: 10;
+    width: 100%;
+    margin: auto;
+}
+
+.text-section3-C {
+    font-size: 4em;
+    color: #00B0FC;
+    z-index: 10;
+}
+
+.text3-right-description {
+    text-align: right;
+}
+
+.text3-right-title {
+    text-align: right;
+    margin-top: -0.5em;
+}
+
+.text3-left-title {
+    text-align: left;
+    margin-top: -0.5em;
+}
+
+.image-fiordland {
+}
+
+.section3-btn-right {
+    text-align: right;
+    position: relative;
+    height: 4em;
+    display: block;
+}
+
+#read-more-btn-right-fiordland, #read-more-btn-right-mtcook {
+    background-color: #00B0FC;
+    width: 10em;
+    display: inline-block;
+    margin-top: 0.8em;
+}
+
+.section3-btn-left {
+    text-align: left;
+    position: relative;
+    height: 4em;
+    display: block;
+}
+
+#read-more-btn-left-tongariro, #read-more-btn-left-queenstown {
+    background-color: #00B0FC;
+    width: 10em;
+    display: inline-block;
+    margin-top: 0.8em;
+}
+
+.read-description-right-fiordland>p, .read-description-right-mtcook>p {
+    width: 100%;
+    transition: all cubic-bezier(.26, .79, .64, .18) 1s;
+    text-align: right;
+}
+
+.read-description-right-fiordland>p.show, .read-description-right-mtcook>p.show {
+    height: 0;
+}
+
+.qt-title {
+    text-align: left;
+    margin-top: -0.5em;
+    line-height: 0.8em;
+}
+
+/*---------------------------------*/
+.read-description-left-slider {
+    padding-bottom: 8em;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.more-places {
+    height: 10em;
+    width: 90%;
+    margin: auto;
+}
+
+/*------section 4-------swiper plugin-----*/
+
+/*---hotel section4 swiper plugin------*/
+
+.beautiful-homes {
+
+    /* font-weight: 300; */
+    font-size: 4em;
+    line-height: 0.8em;
+    margin-top: 1.4em;
+    z-index: 20;
+    color: #00B0FC;
+}
+
+.img-cont-section4-A {
+    height: 30em;
+    box-shadow: none;
+}
+
+.title-on-box {
+    font-size: 2.5em;
+    color: white;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    padding-top: 1em;
+}
+
+.tob-right {
+    text-align: right;
+}
+
+.tob-left {
+    text-align: left;
+    color: #00B0FC;
+    z-index: 20;
+}
+
+.img-homesA-A {
+    background-image: url('../images/hotel-title-section4.jpg');
+}
+
+.img-homesB-1 {
+    background-image: url('../images/hotel3-title-section4.jpg');
+}
+
+.img-homesA-B {
+    background-image: url('../images/hotel2-title-section4.jpg');
+    padding-top: 0;
+    margin-top: 3em;
+}
+
+.img-cont-section4-B {
+    height: 25em;
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+    box-shadow: none;
+}
+
+.swiper-cont-hotel {
+    padding-top: 2.5em;
+}
+
+.swiper-cont-hostel {
+    padding-top: 5em;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: pink;
+}
+
+.swiper-container {
+    z-index: 10;
+    height: 30em !important;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 10px !important;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-slide.s1 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subtitle {
+    color: #fff;
+    padding-top: 4.5em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slide-1 {
+    background-image: url('../images/desktop/desktop-G.jpg');
+    background-position-x: 85%;
+}
+
+.slide-2 {
+    background-image: url('../images/desktop/desktop-M.jpg');
+    background-position-x: 50%;
+}
+
+.slide-3 {
+    background-image: url('../images/desktop/desktop-N.jpg');
+    background-position-x: 70%;
+}
+
+.slide-4 {
+    background-image: url('../images/desktop/desktop-H.jpg');
+    background-position-x: 65%;
+}
+
+.slide-5 {
+    background-image: url('../images/desktop/desktop-P.jpg');
+    background-position-x: 70%;
+}
+
+.slide-6 {
+    background-image: url('../images/desktop/desktop-Q.jpg');
+    background-position-x: 70%;
+}
+
+.slide-7 {
+    background-image: url('../images/desktop/desktop-R.jpg');
+    background-position-x: 70%;
+}
+
+.slide-8 {
+    background-image: url('../images/desktop/desktop-S.jpg');
+    background-position-x: 70%;
+}
+
+.slide-9 {
+    background-image: url('../images/desktop/desktop-T.jpg');
+    background-position-x: 70%;
+}
+
+.slide-10 {
+    background-image: url('../images/desktop/desktop-U.jpg');
+    background-position-x: 70%;
+}
+
+.swiper-wrapper {
+    margin-left: 20px !important;
+}
+
+/*--swiper single view with navigation buttons-----*/
+
+/*----swiper plugin hostel section4-------*/
+
+
+.swiper-container.s2 {
+    height: 450px !important;
+}
+
+.swiper-wrapper.s2 {
+    box-sizing: border-box;
+    margin-left: 0 !important;
+}
+
+.subtitle-s2 {
+    margin-top: 2.4em;
+    font-size: 2.5em;
+    margin-left: 0.01em;
+}
+
+.slide-B-1-hostel {
+    background-image: url('../images/hostel-section4-eastseven-queenstown.jpg');
+}
+
+.slide-B-2-hostel {
+    background-image: url('../images/hostel-section4-hobart-nelson.jpg');
+}
+
+.slide-B-3-hostel {
+    background-image: url('../images/hostel-section4-baroque-queenstown.jpg');
+}
+
+.slide-B-4-hostel {
+    background-image: url('../images/hostel-section4-chillout-christchurch.jpg');
+}
+
+.slide-B-5-hostel {
+    background-image: url('../images/hostel-section4-oasis-tongariro.jpg');
+}
+
+.slide-B-6-hostel {
+    background-image: url('../images/hostel-section4-oasis-auckland.jpg');
+}
+
+.slide-B-6-hostel {
+    background-image: url('../images/hostel-section4-richmond-wellington.jpg');
+}
+
+.slide-B-7-hostel {
+    background-image: url('../images/hostel-section4-sthaven--dunedin.jpg');
+}
+
+.slide-B-8-hostel {
+    background-image: url('../images/hostel-section4-snowmountain-mtcook.jpg');
+}
+
+.slide-B-9-hostel {
+    background-image: url('../images/hostel-section4-wolfrise-queenstown.jpg');
+}
+
+.slide-B-10-hostel {
+    background-image: url('../images/hostel-section4-backpack society-christchurch.jpg');
+}
+
+.img-homesA-C {
+    background-image: url('../images/hostel-section4-title-maxwell-tauranga.jpg');
+}
+
+.img-homesB-2 {
+    background-image: url('../images/hostels-section4-title-yha-christchurch.jpg');
+}
+
+.img-homesA-D {
+    background-image: url('../images/hostel-section4-title-swankymint-christchurch.jpg');
+    margin-bottom: 5em;
+}
+
+.swiper-slide.s2 {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 20%;
+}
+
+/*---swiper motel section 4 plugin----*/
+.img-homesA-E {
+    background-image: url('../images/motel-section4-title-courthouse.jpg');
+}
+
+.img-homesB-3 {
+    background-image: url('../images/motel-section4-title-venusmotel.jpg');
+}
+
+.img-homesA-F {
+    background-image: url('../images/motel-section4-title-islandmotel.jpg');
+}
+
+.slide-C-1-motel {
+    background-image: url('../images/motel-section4-oddsson-christchurch.jpg');
+    background-position-x: 20%;
+}
+
+.slide-C-2-motel {
+    background-image: url('../images/motel-section4-countbaros-wellington.jpg');
+    background-position-x: 50%;
+}
+
+.slide-C-3-motel {
+    background-image: url('../images/motel-section4-greenwich-dunedin.jpg');
+    background-position-x: 20%;
+}
+
+.slide-C-4-motel {
+    background-image: url('../images/motel-section4-craigloft-tongariro.jpg');
+    background-position-x: 20%;
+}
+
+.slide-C-5-motel {
+    background-image: url('../images/motel-section4-masseria-tauranga.jpg');
+    background-position-x: 50%;
+}
+
+.slide-C-6-motel {
+    background-image: url('../images/motel-section4-maryland-queenstown.jpg');
+    background-position-x: 50%;
+}
+
+.slide-C-7-motel {
+    background-image: url('../images/motel-section4-heavenpalace-auckland.jpg');
+    background-position-x: 50%;
+}
+
+.slide-C-8-motel {
+    background-image: url('../images/motel-section4-starrynight-napier.jpg');
+    background-position-x: 50%;
+}
+
+.slide-C-9-motel {
+    background-image: url('../images/motel-section4-seasonheart-queenstown.jpg');
+    background-position-x: 50%;
+}
+
+.slide-C-10-motel {
+    background-image: url('../images/motel-section4-townhouse-tongariro.jpg');
+    background-position-x: 50%;
+}
+
+/*---section4 house swiper plugin---*/
+.img-homesA-G {
+    background-image: url('../images/house-section4-sandyhouse-christchurch.jpg');
+}
+
+.img-homesB-4 {
+    background-image: url('../images/house-section4-title-isleofulva.jpg');
+    background-position-x: 70%;
+}
+
+.img-homesA-H {
+    background-image: url('../images/house-section4-patterson-christchurch.jpg');
+    background-position-x: 70%;
+}
+
+.slide-D-1-house {
+    background-image: url('../images/house-section4-besse-dunedin.jpg');
+    background-position-x: 70%;
+}
+
+.slide-D-2-house {
+    background-image: url('../images/house-section4-brownpalace-tauranga.jpg');
+    background-position-x: 80%;
+}
+
+.slide-D-3-house {
+    background-image: url('../images/house-section4-casatera-tongariro.jpg');
+    background-position-x: 20%;
+}
+
+.slide-D-4-house {
+    background-image: url('../images/house-section4-century-tongariro.jpg');
+    background-position-x: 20%;
+}
+
+.slide-D-5-house {
+    background-image: url('../images/house-section4-girona-queenstown.jpg');
+    background-position-x: 20%;
+}
+
+.slide-D-6-house {
+    background-image: url('../images/house-section4-marais-nelson.jpg');
+    background-position-x: 20%;
+}
+
+.slide-D-7-house {
+    background-image: url('../images/house-section4-northstreet-auckland.jpg');
+    background-position-x: 20%;
+}
+
+.slide-D-8-house {
+    background-image: url('../images/house-section4-room-wellington.jpg');
+    background-position-x: 70%;
+}
+
+.slide-D-9-house {
+    background-image: url('../images/house-section4-sugden-nelson.jpg');
+    background-position-x: 60%;
+}
+
+.slide-D-10-house {
+    background-image: url('../images/house-section4-keri-auckland.jpg');
+    background-position-x: 50%;
+}
+
+.homes-sub-heading {
+    padding-bottom: 6em;
+    box-sizing: border-box;
+}
+
+/*---section5 contact us----*/
+.section5-heading {
+    background: white;
+}
+
+.contact {
+    color: white;
+    margin: auto;
+    width: 90%;
+    padding: 8em 0 8em 0;
+}
+
+.visit-us {
+    width: 90%;
+    margin: auto;
+}
+
+.get-in-touch {
+    background-image: url('../images/section5-getintouch-scrubbybay.jpg');
+    background-position-x: 60%;
+    height: 30em;
+    width: 100%;
+}
+
+.contact-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    min-height: 1px;
+}
+
+footer {
+    height: 20em;
+    width: 90%;
+    background-color: #000;
+    padding-top: 10em;
+    margin: auto;
+}
+
+.list-container {
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+.menu-selection {
+    flex: 0 0 50%;
+    text-align: left;
+    padding-top: 3em;
+}
+
+.find-us {
+    flex: 0 0 50%;
+    padding-top: 3em;
+}
+
+/* shopnow body page */
+.container-shop {
+    width: 90%;
+    margin: auto;
+}
+
+.shopnow1 {
+    font-size: 56px;
+    line-height: 1.2em;
+}
+
+.text-section1-shop {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+/*for small tablet - inclusive*/
+@media only screen and (min-width:40em) {
+    /* body:before {
+        content: 'tablet';
+        background-color: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        padding: 0.5em;
+        right: 0;
+        top: 0;
+    } */
+
+    h4 {
+        font-family: "Antic Didone";
+        font-size: 1em;
+        color: #07430e;
+    }
+
+    p {
+        font-family: "CircularStd" !important;
+        text-align: justify;
+        word-wrap: break-word;
+    }
+
+    #nav-icon1 {
+        left: 90%;
+    }
+
+    .AllShowcase {
+        font-size: 2.5em;
+    }
+
+}
+
+/*for tablet/small laptop - inclusive*/
+@media only screen and (min-width:60em) {
+    /* body:before {
+        content: 'laptop';
+        background-color: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        padding: 0.5em;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+    } */
+
+    h4 {
+        font-family: "Antic Didone";
+        font-size: 1.2em;
+        color: #07430e;
+    }
+
+    p {
+        font-family: "CircularStd" !important;
+        font-size: 20px;
+        line-height: 1.5em;
+        width: 50%;
+        text-align: justify;
+        word-wrap: break-word;
+    }
+
+    #nav-icon1 {
+        left: 91%;
+    }
+
+    .p-title {
+        width: 50%;
+    }
+
+    .p-about {
+        text-align: justify;
+        word-wrap: break-word;
+        width: 70%;
+    }
+
+    .img-cont-section4-A {
+        height: 40em;
+    }
+
+    .AllShowcase {
+        font-size: 3em;
+    }
+
+    .img2, .img3 {
+        width: 60%;
+        height: 100%;
+    }
+
+    .img4, .img1 {
+        width: 70%;
+        height: 100%;
+    }
+
+    .p-title {
+        font-size: 22px;
+        line-height: 1.5em;
+        word-wrap: break-word;
+        text-align: justify;
+        width: 50%;
+    }
+
+}
+
+/*for destop - inclusive*/
+@media only screen and (min-width:80em) {
+  /*   body:before {
+        content: 'desktop';
+        background-color: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        padding: 0.5em;
+        right: 0;
+        top: 0;
+    } */
+
+    h4 {
+        font-family: "Antic Didone";
+        font-size: 30px;
+        color: #07430e;
+    }
+
+    p {
+        font-family: "CircularStd" !important;
+        width: 95%;
+        text-align: justify;
+        word-wrap: break-word;
+    }
+
+    #slide-button {
+        width: 20%;
+        left: -20%;
+    }
+
+    .menu-item {
+        font-size: 1.5vw;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    #nav-icon1 {
+        width: 2.5em;
+        height: 2em;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        margin-top: 1.4em;
+        left: 93%;
+        position: fixed;
+        margin-top: 1.5em;
+    }
+
+    .text-section1-B {
+        font-size: 6em;
+        margin-top: 3em;
+    }
+
+    .spanfonttitle {
+        margin-top: 3em;
+    }
+
+    .SpanFontFirst, .SpanFontSecond {
+        font-size: 1.5vw;
+    }
+
+    .SpanFontFirst {
+        padding-right: 0.3em;
+    }
+
+    .SpanFontSecond {
+        padding-left: 0.3em;
+    }
+
+    .p-title {
+        font-size: 22px;
+        line-height: 1.5em;
+        word-wrap: break-word;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .ReadMore-description-left-A, .ReadMore-description-left-B, .ReadMore-description-left-C, .ReadMore-D {
+        width: 100%;
+    }
+
+    .img1 {
+        height: 100%;
+        width: 50%;
+        flex: 0 50%;
+    }
+
+    .title {
+        flex: 0 50%;
+        padding: 3em;
+        padding-top: 3.5em;
+    }
+
+    #ReadMore-A, #ReadMore-B, #ReadMore-C, #ReadMore-D {
+        background-color: #07430e;
+    }
+
+    .text-section2-A, .text-section3-A, .text-section4-A {
+        font-size: 6em;
+    }
+
+    .img-container-top {
+        margin-top: 10em;
+    }
+
+    .img2 {
+        z-index: 20;
+        height: 100%;
+        width: 45%;
+        flex: 0 45%;
+    }
+
+    .title-2, .title-3 {
+        flex: 0 55%;
+    }
+
+    .AllShowcase {
+        width: 90%;
+        margin: auto;
+        font-size: 3em;
+    }
+
+    .fas {
+        font-size: 1em;
+    }
+
+    .location-p {
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+
+    .img3 {
+        width: 45%;
+        height: 100%;
+        flex: 0 45%;
+        z-index: 20;
+    }
+
+    .p-about {
+        width: 50%;
+        word-wrap: break-word;
+        text-align: justify;
+        font-size: 22px;
+        line-height: 1.5em;
+    }
+
+    .img-cont-section4-A {
+        width: 50%;
+        height: 40em;
+        background-position: 50% 60%;
+    }
+
+    .img4 {
+        flex: 0 50%;
+        height: 100%;
+        width: 50%;
+        z-index: 10;
+    }
+
+    .title4 {
+        flex: 0 50%;
+    }
+
+}
